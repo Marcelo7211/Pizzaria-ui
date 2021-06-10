@@ -1,0 +1,24 @@
+<div>
+    <label for="sabor"></label>
+    <input [(ngModel)]="cardapio.sabor" name="sabor" type="text" placeholder="Insira o sabor" />
+    <br>
+    <br>
+
+    <label for="preco"></label>
+    <input [(ngModel)]="cardapio.preco" name="preco" type="text" placeholder="Insira o preço" />
+    <br>
+    <br>
+
+    <label for="tamanho"></label>
+    <input [(ngModel)]="cardapio.tamanho" name="tamanho" type="text" placeholder="Insira o tamanho" />
+    <br>
+    <br>
+
+    <label for="bordaRecheada"></label>
+    <input [(ngModel)]="borda" name="bordaRecheada" type="text" placeholder="Sim ou Não" />
+    <br>
+    <br>
+
+    <button type="button" (click)="salvar()">Salvar</button>
+    <a routerLink="/cardapio">Voltar</a><br>
+</div>

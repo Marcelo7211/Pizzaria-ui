@@ -1,0 +1,11 @@
+<h1>Cardapio</h1>
+
+<div *ngFor="let cardapio of cardapios">
+    <p>id: {{ cardapio.id }}</p>
+    <p>sabor: {{ cardapio.sabor }}</p>
+    <p>preço: {{ cardapio.preco }}</p>
+    <p>tamanho: {{ cardapio.tamanho }}</p>
+    <p>borda: <span *ngIf="cardapio.bordaRecheada">sim</span>
+        <span *ngIf="!cardapio.bordaRecheada">não</span> </p>
+    <hr>
+</div>

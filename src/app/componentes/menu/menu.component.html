@@ -1,0 +1,8 @@
+<h1> {{ recado }} </h1>
+
+<div *ngIf="apareca">
+    <h3 *ngFor="let nome of nomes">Imprimindo {{ nome }}</h3>
+</div>
+
+
+<input type="button" value="Clique em mim" (click)="mostrarTamanhoArray()" />
